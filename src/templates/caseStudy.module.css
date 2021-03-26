@@ -1,0 +1,7 @@
+.pageHeadline {
+    background-color: var(--dark1);
+}
+
+.pageHeadline h1 {
+    margin-top:0;
+}

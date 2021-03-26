@@ -1,0 +1,84 @@
+header nav .menu {
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:1;
+    top:0;
+    left:-100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.4s cubic-bezier(.8, .5, .2, 1.4);
+}
+
+header nav .menu.open {
+    left:0;
+}
+
+header nav .menu ul {
+    text-align: center;
+    background-color: var(--dark1semitrans);
+    width:100%;
+    height:50%;
+    padding: 1rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    backdrop-filter:blur(4px);
+}
+
+header nav ul li {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    position: relative;
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    -o-transition: all 0.15s ease-out;
+    -ms-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}
+
+.menu ul li a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.25s cubic-bezier(1, 0.25, 0, 0.75) 0s;
+    transition: all 0.25s cubic-bezier(1, 0.25, 0, 0.75) 0s;
+}
+
+.menu ul li a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+@media (min-width:800px) {
+
+    header nav .menu {
+        position:relative;
+        left:0;
+    }
+
+    header nav .menu ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    header nav .menu ul li {
+        display: inline-block;
+        margin: 0 0.5rem;
+        font-size: 1.7rem;
+    }
+}

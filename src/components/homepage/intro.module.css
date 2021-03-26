@@ -1,0 +1,66 @@
+section.intro {
+    background-color: var(--dark1);
+    height: 90vh;
+}
+
+section.intro > div {
+    height:calc(90vh - 2rem);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.intro a {
+    color: var(--light1);
+}
+
+section.intro h1 {
+    color: var(--accent);
+    font-size: clamp(2.8rem, 8vw, 4.5rem);
+    width: minmax(60%, 500px);
+    margin-top:12vh;
+}
+
+section.intro div.scrollarrow {
+    z-index:100;
+    align-self: center;
+    width: 5rem;
+    fill:var(--accent);
+    stroke:var(--accent);
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-40px); }
+    100% { transform: translateY(0); }
+}
+
+span.purpose {
+    display:inline-block;
+    height: 1em;
+    width: clamp(7em,30rem,90vw);
+    margin-bottom: -5px;
+}
+
+span.purpose > span {
+    display:inline-block; 
+}
+
+/* ============== MEDIA QUERIES ============== */
+
+@media (min-width:800px) {
+
+    section.intro h1 {
+        margin-top: 9rem;
+    }
+
+    section.intro h1 > span {
+        display: inline-block;
+    }
+
+}

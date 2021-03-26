@@ -1,0 +1,109 @@
+.workitem {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-basis:300px;
+    background-color: var(--light2);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    color:var(--dark2);
+    border-radius: 2px;
+}
+
+.flipcard {
+    background-color: transparent;
+    width: 100%;
+    height:142px;
+    perspective: 1000px; 
+    border-radius: 2px;
+}
+
+.flipped > div {
+    transform: rotateX(180deg);
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .flipcard:hover .flipcardinner {
+        transform: rotateX(180deg);
+    }
+}
+
+.flipcardinner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
+}
+
+.flipcardfront, .flipcardback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 2px;
+}
+
+.flipcardback {
+    background-color: var(--dark1semitrans);
+    transform: rotateX(180deg);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+} 
+
+.flipbutton {
+    display:inline-block;
+    width: 11rem;
+    margin: 0.25rem;
+    padding: 0.5rem;
+    background-color: var(--accent);
+    color:#fff;
+    transition: color 0.1s ease-out;
+}
+
+.flipbutton:hover {
+    color:var(--dark1);
+}
+
+.workitem img,
+.woritem picture {
+    width: 100%;
+    border-radius: 2px;
+}
+
+.workitem h4 {
+    font-weight: normal;
+    margin: 0.5rem 0;
+}
+
+.workitem p {
+    margin-bottom: 1rem;
+}
+
+.worktags {
+    margin: auto 0 0.25rem 0;
+    text-align: right;
+    line-height: 1.7;
+}
+
+.worktags span {
+    display:inline-block;
+    margin:0.125rem;
+    font-size: 0.8rem;
+    padding:0 0.5rem;
+    border-radius: 3px;
+    background-color: var(--dark2);
+    color:var(--light1);
+}
+
+.worktags span::before {
+    content: ' ';
+    font-size: 0;
+  }
+  
+.worktags span:last-child::before {
+    content: '';
+}

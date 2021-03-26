@@ -1,0 +1,33 @@
+footer {
+    background-color: var(--dark1);
+    color:var(--light1);
+}
+
+footer > div {
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer > div > div {
+    min-width:300px;
+}
+
+footer p {
+    color:var(--light1);
+}
+
+footer .footerinfo p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ============== MEDIA QUERIES ============== */
+
+@media (min-width:800px) {
+
+    footer > div {
+        flex-direction:row-reverse;
+    }
+
+}

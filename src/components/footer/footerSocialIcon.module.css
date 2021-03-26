@@ -1,0 +1,11 @@
+ svg.footericon {
+    width: 40px;
+    height:auto;
+    fill:var(--light1);
+    transition: all 0.1s ease-in;
+}
+
+svg.footericon:hover {
+    fill:var(--accent);
+    transform: scale(1.2);
+}

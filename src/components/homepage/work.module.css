@@ -1,0 +1,28 @@
+section.work > div {
+    padding-bottom:0;
+}
+
+section.work h2 {
+    color:var(--dark2);
+    margin-bottom:0;
+    line-height: 0.65;
+}
+
+section.workcontent {
+    background-color: var(--dark1);
+}
+
+section.workcontent > div {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* ============== MEDIA QUERIES ============== */
+
+@media (min-width:800px) {
+
+    section.workcontent {
+        padding: 1rem 0;
+    }
+
+}

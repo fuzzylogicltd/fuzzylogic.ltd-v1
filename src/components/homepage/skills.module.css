@@ -1,0 +1,50 @@
+section.skills > div {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    border-radius: 2px;
+}
+
+section.skills img {
+    width: 110px;
+    opacity: 0.9;
+}
+
+section.skills h4 {
+    margin: 1rem 0;
+    color:var(--text);
+}
+
+section.skills h5 {
+    color:var(--dark2);
+    font-weight: normal;
+}
+
+section.skills p {
+    margin: 0 0 1rem 0;
+}
+
+/* ============== MEDIA QUERIES ============== */
+
+@media (min-width:800px) {
+    
+    section.skills {
+        padding-bottom: 6rem;
+    }
+
+    section.skills > div {
+        flex-direction:row;
+        align-items:flex-start;
+        background-color: #fff;
+        margin-top: -7rem;
+        padding: 2rem;
+        box-shadow:
+        0 -2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 -6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 -12.5px 10px rgba(0, 0, 0, 0.06),
+        0 -22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 -41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 -100px 80px rgba(0, 0, 0, 0.12);
+    }
+}

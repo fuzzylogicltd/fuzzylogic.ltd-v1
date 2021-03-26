@@ -1,0 +1,73 @@
+header {
+    background-color: var(--dark1);
+    height:10vh
+}
+
+header div {
+    grid-template-columns: 1fr 1fr;
+}
+
+header div.logo {
+    font-size: 2rem;
+    color:var(--light1)
+}
+
+header nav {
+    text-align: right;
+}
+
+div.burger {
+    display: inline-block;
+    cursor: pointer;
+    position:absolute;
+    z-index: 10;
+    top:-0.5rem;
+    right:0;
+}
+
+div.burger svg {
+    width: 120px;
+    height: 100px;
+    cursor: pointer;
+}
+
+div.burger svg path {
+    fill: none;
+    -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+    -moz-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+    -o-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+    -ms-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+    transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+    stroke-width: 40px;
+    stroke-linecap: round;
+    stroke: var(--accent);
+    stroke-dashoffset: 0px;
+}
+
+div.burger svg path:first-child,
+div.burger svg path:last-child {
+    stroke-dasharray: 240px 950px;
+}
+
+div.burger svg path:nth-child(2) {
+    stroke-dasharray: 240px 240px;
+}
+
+nav.open div.burger path:first-child,
+nav.open div.burger path:last-child {
+    stroke-dashoffset: -650px;
+    stroke-dashoffset: -650px;
+}
+
+nav.open div.burger path:nth-child(2) {
+    stroke-dashoffset: -115px;
+    stroke-dasharray: 1px 220px;
+}
+
+@media (min-width:800px) {
+
+    div.burger {
+        display:none;
+    }
+
+}
