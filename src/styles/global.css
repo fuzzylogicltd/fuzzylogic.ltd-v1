@@ -100,4 +100,14 @@ span.avoidwrap {
     display:inline-block; 
 }
 
-/* ========= SECTIONS ========= */
+/* ========= Global elements ========= */
+
+a.linkbutton {
+    display:block;
+    width: 12rem;
+    padding:0.7rem 0;
+    text-align: center;
+    margin:0.7rem auto;
+    background-color: var(--dark1);
+    color:var(--accent);
+}

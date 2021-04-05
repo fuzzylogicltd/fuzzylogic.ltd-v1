@@ -5,3 +5,37 @@
 .pageHeadline h1 {
     margin-top:0;
 }
+
+article p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+article h2 {
+    font-size: 2rem;
+    color:var(--dark1);
+    margin-top: 2rem;
+}
+
+.caseStudyHeader {
+    display:flex;
+    width:100%;
+    max-width: 300px;
+    flex-direction:column;
+    background-color: var(--light2);
+    padding: 1rem;
+    justify-content:space-between;
+    float:right;
+}
+
+span.caseStudyTag {
+    background-color: var(--dark2);
+    color:var(--light1);
+    border-radius: 3px;
+    margin-right: 3px;
+    padding: 0.25rem 0.5rem;
+}
+
+.caseStudyHeaderImage {
+    border: 1px solid #ccc;
+}

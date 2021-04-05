@@ -1,20 +1,35 @@
 module.exports = {
   siteMetadata: {
     title: "fuzzylogic.ltd",
+    rootURL: "https://fuzzylogic.ltd",
     copyright: "©2021 Lazar Miseljic. Built with Gatsby."
 
   },
   plugins: [
-    `gatsby-transformer-remark`,
+    //`gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+              linkImagesToOriginal: false,
+            },
+          },
+        ],
+      },
+    },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `src`,
-        path: `${__dirname}/src/`,
+        path: `${__dirname}/src/data`,
       },
     },
   ]

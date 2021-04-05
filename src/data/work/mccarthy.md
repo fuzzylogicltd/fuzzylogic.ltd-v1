@@ -5,6 +5,7 @@ image: "./mccarthy.png"
 blurb: "I did a complete site revamp for one the most reputed law firms in Westchester."
 tags: "Design,HTML,CSS,JS,Wordpress"
 www: "https://www.mccarthyfingar.com"
+git: ""
 slug: ""
 ---
 this is the case study for MF

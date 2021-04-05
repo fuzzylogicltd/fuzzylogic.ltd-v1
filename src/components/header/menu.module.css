@@ -35,11 +35,17 @@ header nav ul li {
 .menu ul li a {
     text-decoration: none;
     position: relative;
+    text-transform: uppercase;
+    color:var(--light1);
     -webkit-transition: all 0.15s ease-out;
     -moz-transition: all 0.15s ease-out;
     -o-transition: all 0.15s ease-out;
     -ms-transition: all 0.15s ease-out;
     transition: all 0.15s ease-out;
+}
+
+.menu ul li a:hover {
+    color:var(--accent);
 }
 
 .menu ul li a:before {
@@ -69,6 +75,7 @@ header nav ul li {
     header nav .menu {
         position:relative;
         left:0;
+        height:auto;
     }
 
     header nav .menu ul {

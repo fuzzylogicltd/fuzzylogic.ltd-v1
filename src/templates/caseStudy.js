@@ -1,7 +1,8 @@
 import React from 'react';
+import Helmet from "../components/helmet";
 import { graphql } from "gatsby";
+import { getImage, GatsbyImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
-//import { MDXRenderer } from "gatsby-plugin-mdx";
 import * as styles from './caseStudy.module.css';
 
 export default function caseStudy({ data }) {
@@ -10,16 +11,30 @@ export default function caseStudy({ data }) {
     return (
 
         <Layout>
+
+          <Helmet slug={frontmatter.slug} title={`${frontmatter.title} Case Study - fuzzylogic.ltd`} />
+
           <section className={styles.pageHeadline}>
             <div class="container">
               <h1>{frontmatter.title}</h1>
             </div>
           </section>
           <section class="content">
-            <div class="container">
-            <div dangerouslySetInnerHTML={{ __html: html }} />
-            {/* <MDXRenderer>{body}</MDXRenderer> */}
-            </div>
+              <article className="container">
+                
+              { frontmatter.tags.split(",").map((tag) => <span key={tag} className={styles.caseStudyTag}> {tag}</span> ) }
+                <div className={styles.caseStudyHeader}>
+                  <div>
+                    <GatsbyImage image={getImage(frontmatter.image)} alt={frontmatter.title} className={styles.caseStudyHeaderImage} />
+                  </div>
+                  <div className="caseStudyInfo">
+                    { frontmatter.www ? <a href={frontmatter.www} className="linkbutton">Live site</a> : "" }
+                    { frontmatter.git ? <a href={frontmatter.git} className="linkbutton">Code on GitHub</a> : "" }
+                  </div>
+                </div>
+
+                <div dangerouslySetInnerHTML={{ __html: html }} />
+              </article>
           </section>
         </Layout>
 
@@ -33,6 +48,17 @@ export const pageQuery = graphql`
       frontmatter {
         slug
         title
+        www
+        git
+        tags
+        image {
+          childImageSharp {
+            gatsbyImageData(
+              width: 300
+              quality: 90
+              )
+          }
+        }
       }
     }
   }
