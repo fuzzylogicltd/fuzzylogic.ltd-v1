@@ -46,6 +46,7 @@ header nav ul li {
 
 .menu ul li a:hover {
     color:var(--accent);
+    background:none;
 }
 
 .menu ul li a:before {

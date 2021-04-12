@@ -26,7 +26,7 @@ That just left the logo. I knew I wanted a monogram, but that's about all I knew
 
 ![Logo](./miseljic-logo.png)
 
-I'm not sure how I settled on that apple green for the accent color but I'm glad I did, green in general is an underused color in design.
+I'm not sure how I settled on that apple green for the accent color but I'm glad I did, green in general is an underused color in design outside of health and finance.
 
 ## The CMS
 Early on I decided on a headless CMS aproach because if done right can be both faster and safer than something like Wordpress. I'd tried Directus before and liked it so I decided to use that. If you don't know what [Directus](https://directus.io/) is, it's a headless CMS that's you can pay to use as a SaaS solution, not too different than Contentful or Butter CMS. The big difference being that Directus is open source and free to use on your own server. But despite it being free, it's quite feature-rich and straightforward enough to set up and use (although I'll say the documentation *is* a bit thin).

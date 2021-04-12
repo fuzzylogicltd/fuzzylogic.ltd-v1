@@ -9,7 +9,7 @@ class about extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            aboutText: "I'm a freelance web designer and full-stack developer with over 15 years of experience in creating websites that make people happy and get stuff done. I can make you a site or custom web application from start to finish or cover only part of a project that you need an extra pair of hands on.",
+            aboutText: "I'm a freelance web designer and full-stack developer with over 15 years of experience in creating websites that make people happy and get stuff done. I can make you a site or custom web application from start to finish or cover only the part of a project that you need an extra pair of hands on.",
             show: false 
         }
     }

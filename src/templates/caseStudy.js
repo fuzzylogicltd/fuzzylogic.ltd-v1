@@ -14,15 +14,15 @@ export default function caseStudy({ data }) {
 
           <Helmet slug={frontmatter.slug} title={`${frontmatter.title} Case Study - fuzzylogic.ltd`} />
 
-          <section className={styles.pageHeadline}>
+          <section className="pageHeadline">
             <div class="container">
-              <h1>{frontmatter.title}</h1>
+              <h1>{frontmatter.title} Case&nbsp;Study</h1>
             </div>
           </section>
           <section class="content">
               <article className="container">
                 
-              { frontmatter.tags.split(",").map((tag) => <span key={tag} className={styles.caseStudyTag}> {tag}</span> ) }
+              { frontmatter.tags.split(",").map((tag) => <span key={tag} className={styles.caseStudyTag}>{tag}</span> ) }
                 <div className={styles.caseStudyHeader}>
                   <div>
                     <GatsbyImage image={getImage(frontmatter.image)} alt={frontmatter.title} className={styles.caseStudyHeaderImage} />

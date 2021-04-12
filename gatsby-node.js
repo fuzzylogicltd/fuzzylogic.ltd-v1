@@ -1,16 +1,16 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
     const { createPage } = actions
   
-    const blogPostTemplate = require.resolve(`./src/templates/caseStudy.js`)
+    const caseStudyTemplate = require.resolve(`./src/templates/caseStudy.js`)
+    const generalPageTemplate = require.resolve(`./src/templates/generalPage.js`)
   
     const result = await graphql(`
     {
-      allMarkdownRemark(
+      work: allMarkdownRemark(
               filter: {
                 fileAbsolutePath: {regex: "/(work)/"  }
                 frontmatter: { slug: { ne: "" } }
               }
-        
               limit: 1000
             ) {
               edges {
@@ -21,23 +21,47 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                 }
               }
             }
+       miscpage: allMarkdownRemark(
+            filter: {
+              fileAbsolutePath: {regex: "/(miscpage)/"  }
+              frontmatter: { slug: { ne: "" } }
+            }
+            limit: 1000
+          ) {
+            edges {
+              node {
+                frontmatter {
+                  slug
+                }
+              }
+            }
           }
+        }
     `)
   
-    // Handle errors
     if (result.errors) {
       reporter.panicOnBuild(`Error while running GraphQL query.`)
       return
     }
   
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    result.data.work.edges.forEach(({ node }) => {
       createPage({
         path: node.frontmatter.slug,
-        component: blogPostTemplate,
+        component: caseStudyTemplate,
         context: {
-          // additional data can be passed via context
           slug: node.frontmatter.slug,
         },
       })
     })
+
+    result.data.miscpage.edges.forEach(({ node }) => {
+      createPage({
+        path: node.frontmatter.slug,
+        component: generalPageTemplate,
+        context: {
+          slug: node.frontmatter.slug,
+        },
+      })
+    })
+
   }
