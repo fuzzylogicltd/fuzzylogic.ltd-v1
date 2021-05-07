@@ -9,7 +9,36 @@ header div {
 
 header div.logo {
     font-size: 2rem;
-    color:var(--light1)
+    color:var(--light1);
+    display:flex;
+    align-items: center;
+}
+
+header div.logo svg {
+    height: 60px;
+    margin-right: 10px;
+    transition: transform .4s ease-in-out;
+}
+
+header div.logo svg:hover {
+    transform: rotate(180deg);
+}
+
+header div.logo svg path{
+    fill:var(--accent);
+}
+
+header .sitetitle {
+    overflow:hidden;
+}
+
+header .sitetitle span {
+    margin-left:-100%;
+    transition: margin-left 0.3s ease-in;
+}
+
+header div.logo a:hover ~ .sitetitle span {
+    margin-left:0;
 }
 
 header nav {
