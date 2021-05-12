@@ -27,8 +27,8 @@ class WorkItem extends Component {
                     <GatsbyImage image={this.props.image} alt={this.props.name} />
                   </div>
                   <div className={styles.flipcardback}>
-                    { (this.props.www !== "") ? <a href={this.props.www} className={styles.flipbutton}>Live Site</a> : "" }
-                    { (this.props.slug !== "") ? <Link to={this.props.slug} className={styles.flipbutton}>Case Study</Link> : "" }
+                    { (this.props.www !== "") ? <a href={this.props.www} class="linkbutton">Live Site</a> : "" }
+                    { (this.props.slug !== "") ? <Link to={this.props.slug} class="linkbutton">Case Study</Link> : "" }
                   </div>
                 </div>
               </div> 
