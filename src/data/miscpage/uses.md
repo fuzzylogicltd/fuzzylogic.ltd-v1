@@ -3,6 +3,8 @@ slug: "uses"
 title: "Uses"
 ---
 
+This is the list of stuff I use on a regular basis. If you want to see more lists like this, check out [uses.tech](https://uses.tech/).
+
 ## Technologies
 
 ### Front End
@@ -45,7 +47,5 @@ title: "Uses"
 
 ### Utilites
 - Filezilla
-
-
-## Hardware
+- Toggl
 
