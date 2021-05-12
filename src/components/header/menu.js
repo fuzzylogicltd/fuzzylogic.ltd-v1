@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import * as styles from "./menu.module.css";
 
 const Menu = (props) => {
     return (
         <div className={` ${styles.menu } ${props.open ? `${styles.open}` : ""}`}>
             <ul>
-                <li><span><a href="/#about">About</a></span></li>
-                <li><span><a href="/#work">Work</a></span></li>
-                <li><span><a href="/#contact">Contact</a></span></li>
+                <li><Link to="/#about">About</Link></li>
+                <li><Link to="/#work">Work</Link></li>
+                <li><Link to="/#contact">Contact</Link></li>
             </ul>
         </div>
     )
