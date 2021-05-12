@@ -21,8 +21,10 @@ export default function caseStudy({ data }) {
           </section>
           <section class="content">
               <article className="container">
-                
-              { frontmatter.tags.split(",").map((tag) => <span key={tag} className={styles.caseStudyTag}>{tag}</span> ) }
+                <div className={styles.caseStudyTagHolder}>
+                  { frontmatter.tags.split(",").map((tag) => <span key={tag} className={styles.caseStudyTag}>{tag}</span> ) }
+                </div>
+              
                 <div className={styles.caseStudyHeader}>
                   <div>
                     <GatsbyImage image={getImage(frontmatter.image)} alt={frontmatter.title} className={styles.caseStudyHeaderImage} />

@@ -9,11 +9,17 @@
     float:right;
 }
 
+.caseStudyTagHolder {
+    display:flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
 span.caseStudyTag {
     background-color: var(--dark2);
     color:var(--light1);
     border-radius: 3px;
-    margin-right: 3px;
+    margin: 2px;
     padding: 0.25rem 0.5rem;
 }
 
