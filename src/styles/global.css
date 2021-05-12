@@ -20,7 +20,6 @@ html {
     --accent: #FF934F;  /* Atomic Tangerine */
     --text: #222222;    /* Text gray */
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 ul {
@@ -151,7 +150,7 @@ article a {
     background-size: 4px 50px;
   }
 
-article a.linkbutton {
+.linkbutton {
     display:block;
     width: 12rem;
     padding:0.7rem 0;
@@ -159,7 +158,7 @@ article a.linkbutton {
     margin:0.7rem auto;
 }
 
-a.linkbutton, a.linkbutton:link, a.linkbutton:visited {
+.linkbutton, .linkbutton:link, .linkbutton:visited {
     border: none;
     outline: none;
     color:var(--accent);
@@ -167,12 +166,13 @@ a.linkbutton, a.linkbutton:link, a.linkbutton:visited {
     border-radius: 3px;
     transition: all 0.2s ease-in;
   }
-  a.linkbutton:hover, a.linkbutton:focus, a.linkbutton:link:hover, a.linkbutton:link:focus, a.linkbutton:visited:hover, a.linkbutton:visited:focus {
+  .linkbutton:hover, .linkbutton:focus, .linkbutton:link:hover, .linkbutton:link:focus, .linkbutton:visited:hover, .linkbutton:visited:focus {
     transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
     -webkit-animation: gelatine 0.5s 1;
             animation: gelatine 0.5s 1;
     color:#fff;
     background: var(--dark1);
+    cursor: pointer;
   }
   
   @-webkit-keyframes gelatine {
