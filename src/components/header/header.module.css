@@ -14,14 +14,19 @@ header div.logo {
     align-items: center;
 }
 
-header div.logo svg {
-    height: 60px;
+header div.logo a {
     margin-right: 10px;
-    transition: transform .4s ease-in-out;
+    height: 60px;
+    transition: transform .3s ease-in-out;
 }
 
-header div.logo svg:hover {
+header div.logo a:hover {
     transform: rotate(180deg);
+}
+
+header div.logo svg {
+    height: 60px;
+    
 }
 
 header div.logo svg path{
