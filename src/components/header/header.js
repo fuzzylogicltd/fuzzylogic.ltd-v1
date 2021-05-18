@@ -1,7 +1,6 @@
 import React from 'react';
 import Menu from './menu';
 import * as styles from "./header.module.css";
-import logo from '../../assets/fuzzylogic-logo.svg';
 
 class Header extends React.Component {
 
