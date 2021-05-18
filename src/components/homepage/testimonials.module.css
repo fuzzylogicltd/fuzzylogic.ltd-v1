@@ -1,3 +1,55 @@
+section.testimonials {
+    padding: 3rem 0;
+}
+
 section.testimonials h3 {
     color:var(--dark1);
+}
+
+.testimonialSlider {
+    margin: 3rem 0;
+}
+
+.testimonialSlider figure blockquote {
+    line-height: 1.5;
+    color:var(--text);
+}
+
+section.testimonials figcaption {
+    margin: 2rem;
+}
+
+section.testimonials ul li button::before {
+    font-size: 1rem;
+}
+
+.testimonialauthor {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color:var(--dark1);
+    display:block;
+    width:100%;
+}
+
+.testimonialtitle {
+    color:var(--dark2);
+}
+
+
+@media (min-width: 880px) {
+
+    .testimonialSlider figure {
+        display:flex !important;
+        flex-direction: row;
+    }
+
+    .testimonialSlider figure blockquote {
+        max-width: 65%;
+    }
+
+    section.testimonials ul {
+        position:relative;
+        margin-top: 2rem;
+    }
+    
 }
