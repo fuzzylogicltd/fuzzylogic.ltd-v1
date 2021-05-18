@@ -3,6 +3,7 @@ import Helmet from "../components/helmet";
 import Header from "./header/header";
 import Contact from "../components/contact";
 import Footer from "./footer/footer";
+import "../styles/global.css";
 
 const layout = ({ children }) => {
     return (
