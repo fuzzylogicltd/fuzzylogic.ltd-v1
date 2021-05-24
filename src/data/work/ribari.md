@@ -8,4 +8,3 @@ www: "https://www.ribariljudskihdusa.com"
 git: ""
 slug: ""
 ---
-this is the case study for Ribari

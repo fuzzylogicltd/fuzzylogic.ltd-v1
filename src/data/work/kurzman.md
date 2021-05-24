@@ -50,3 +50,5 @@ So at long last, an example of the actual site built on this system. Kurzman Eis
 Attorneys are linked to practice areas and more specific sub-practice pages, and you can follow the links back and forth to learn about the firm, the people and their specialties in detail.
 
 ![Attorney list](./kurzman-attorneys.png)
+
+Besides those, there's also a news section, the items from which get pulled to the homepage into a carousel as well, and a few static pages, including a contact page with a Google map.

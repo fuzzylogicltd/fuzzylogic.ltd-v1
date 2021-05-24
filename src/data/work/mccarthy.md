@@ -8,4 +8,3 @@ www: "https://www.mccarthyfingar.com"
 git: ""
 slug: ""
 ---
-this is the case study for MF
