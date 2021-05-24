@@ -1,7 +1,6 @@
 import React from 'react';
 import Helmet from "../components/helmet";
 import { StaticQuery, graphql } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import * as styles from './badges.module.css';
 

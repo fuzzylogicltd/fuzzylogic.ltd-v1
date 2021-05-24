@@ -37,7 +37,7 @@ class Header extends React.Component {
                 </div>
 
                 <nav className={` ${this.state.open ? `${styles.open}` : ""}`}>
-                    <div className={styles.burger}
+                    <div className={styles.burger} role="navigation"
                         onClick={() => this.toggle()}
                         onKeyDown={() => this.toggle()} >
                         <svg id="icon" viewBox="0 0 800 600">

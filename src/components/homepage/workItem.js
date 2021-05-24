@@ -21,7 +21,7 @@ class WorkItem extends Component {
   render() {
     return (
         <div className={styles.workitem}>
-            <div className={ `${styles.flipcard} ${this.state.flipped ? styles.flipped : '' }`} onClick={this.flipCard}>
+            <div className={ `${styles.flipcard} ${this.state.flipped ? styles.flipped : '' }`} onClick={this.flipCard} role="show buttons">
                 <div className={styles.flipcardinner}>
                   <div className={styles.flipcardfront}>
                     <GatsbyImage image={this.props.image} alt={this.props.name} />
