@@ -24,7 +24,7 @@ class WorkItem extends Component {
             <div className={ `${styles.flipcard} ${this.state.flipped ? styles.flipped : '' }`} onClick={this.flipCard} role="show buttons">
                 <div className={styles.flipcardinner}>
                   <div className={styles.flipcardfront}>
-                    <GatsbyImage image={this.props.image} alt={this.props.name} />
+                    <GatsbyImage image={this.props.image} alt={this.props.name} imgStyle={{ transform:"none", willChange:"auto" }} />
                   </div>
                   <div className={styles.flipcardback}>
                     { (this.props.www !== "") ? <a href={this.props.www} class="linkbutton">Live Site</a> : "" }
