@@ -6,7 +6,7 @@ const Contact = () => {
         <section id="contact" className={styles.contact}>
         <div className="container">
             <h2>Let's Talk</h2>
-            <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+            <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact" action="/thanks">
                 <input type="hidden" name="bot-field" />
                 <input type="hidden" name="form-name" value="contact" />
                 <div className={styles.halfform}>
