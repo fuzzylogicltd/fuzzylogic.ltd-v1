@@ -25,6 +25,7 @@ header nav .menu ul {
     flex-direction:column;
     justify-content:center;
     backdrop-filter:blur(4px);
+    list-style-type: none;
 }
 
 header nav ul li {
