@@ -26,12 +26,14 @@ section.intro div.scrollarrow {
     z-index:100;
     align-self: center;
     width: 5rem;
-    fill:var(--accent);
-    stroke:var(--accent);
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-name: bounce;
     animation-timing-function: ease;
+}
+
+section.intro div.scrollarrow svg {
+    color:var(--accent);
 }
 
 @keyframes bounce {
