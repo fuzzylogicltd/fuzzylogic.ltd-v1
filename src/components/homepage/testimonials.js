@@ -8,6 +8,7 @@ import * as styles from './testimonials.module.css';
 const testimonials = () => {
     var settings = {
         dots: true,
+        arrows: false,
         infinite: true,
         speed: 500,
         slidesToShow: 1,

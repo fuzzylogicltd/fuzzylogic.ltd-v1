@@ -1,5 +1,5 @@
 ---
-content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, inventore provident. Expedita nobis, enim, obcaecati assumenda, id facilis pariatur impedit exercitationem dignissimos illo quos minus deleniti est! Tenetur nihil cum dolor. Necessitatibus totam odit fugiat minus explicabo sint autem soluta vitae. Earum magnam distinctio assumenda facilis voluptas laudantium voluptatum sit."
+content: "ComNet Communications and I have engage with Lazar as a vendor for more than 5 years for website, design, and database expertise on many internal projects. He has always provided timely response and professional work and would recommend him and his excellent work to all. We look forward to many more positive engagements and creative ideas."
 author: "Andrew Lebiszczak"
 title: "IT Director" 
 company: "Comnet Communications"
