@@ -15,11 +15,11 @@ export default function caseStudy({ data }) {
           <Helmet slug={frontmatter.slug} title={`${frontmatter.title} Case Study - fuzzylogic.ltd`} />
 
           <section className="pageHeadline">
-            <div class="container">
+            <div className="container">
               <h1>{frontmatter.title} Case&nbsp;Study</h1>
             </div>
           </section>
-          <section class="content">
+          <section className="content">
               <article className="container">
                 <div className={styles.caseStudyTagHolder}>
                   { frontmatter.tags.split(",").map((tag) => <span key={tag} className={styles.caseStudyTag}>{tag}</span> ) }

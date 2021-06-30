@@ -36,11 +36,11 @@ const badges = () => {
           <Helmet slug={`/badges`} title={`Web Development Marit Badges - fuzzylogic.ltd`} />
 
           <section className="pageHeadline">
-            <div class="container">
+            <div className="container">
               <h1>Web Development Merit Badges&nbsp;Earned</h1>
             </div>
           </section>
-          <section class="content">
+          <section className="content">
               <article className="container">
 
                 <p>Badges created by <a href="https://css-tricks.com/web-development-merit-badges/">Chris Coyier</a>. Awarded to me by me :)</p>

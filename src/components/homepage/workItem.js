@@ -21,14 +21,14 @@ class WorkItem extends Component {
   render() {
     return (
         <div className={styles.workitem}>
-            <div className={ `${styles.flipcard} ${this.state.flipped ? styles.flipped : '' }`} onClick={this.flipCard} role="show buttons" aria-role="button">
+            <div className={ `${styles.flipcard} ${this.state.flipped ? styles.flipped : '' }`} onClick={this.flipCard} role="show buttons">
                 <div className={styles.flipcardinner}>
                   <div className={styles.flipcardfront}>
                     <GatsbyImage image={this.props.image} alt={this.props.name} imgStyle={{ transform:"none", willChange:"auto" }} />
                   </div>
                   <div className={styles.flipcardback}>
-                    { (this.props.www !== "") ? <a href={this.props.www} class="linkbutton">Live Site</a> : "" }
-                    { (this.props.slug !== "") ? <Link to={this.props.slug} class="linkbutton">Case Study</Link> : "" }
+                    { (this.props.www !== "") ? <a href={this.props.www} className="linkbutton">Live Site</a> : "" }
+                    { (this.props.slug !== "") ? <Link to={this.props.slug} className="linkbutton">Case Study</Link> : "" }
                   </div>
                 </div>
               </div> 

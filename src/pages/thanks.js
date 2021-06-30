@@ -9,11 +9,11 @@ const thanks = () => {
              <Helmet slug={`/badges`} title={`Web Development Marit Badges - fuzzylogic.ltd`} />
 
              <section className="pageHeadline">
-            <div class="container">
+            <div className="container">
             <h1>Message received!</h1>
             </div>
           </section>
-          <section class="content">
+          <section className="content">
               <article className="container">
                 <p>Thank you. I'll get in touch as soon as I can.</p>
               </article>

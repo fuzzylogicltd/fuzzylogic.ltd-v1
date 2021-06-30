@@ -11,11 +11,11 @@ export default function generalPage({ data }) {
             <Helmet slug={frontmatter.slug} title={`${frontmatter.title} - fuzzylogic.ltd`} />
 
             <section className="pageHeadline">
-            <div class="container">
+            <div className="container">
                 <h1>{frontmatter.title}</h1>
             </div>
             </section>
-            <section class="content">
+            <section className="content">
                 <article className="container">
                     <div dangerouslySetInnerHTML={{ __html: html }} />
                 </article>
