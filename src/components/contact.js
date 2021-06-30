@@ -11,15 +11,15 @@ const Contact = () => {
                 <input type="hidden" name="form-name" value="contact" />
                 <div className={styles.halfform}>
                     <label htmlFor="name">Name</label>
-                    <input type="text" name="name" />
+                    <input type="text" name="name" id="name" />
                 </div>
                 <div className={styles.halfform}>
                     <label htmlFor="name">Email</label>
-                    <input type="email" name="email" />
+                    <input type="email" name="email" id="email" />
                 </div>
                 <div>
                     <label htmlFor="message">Message</label>
-                    <textarea name="message" id="" cols="30" rows="10"></textarea>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
                 </div>
                 <div className={styles.buttonholder}>
                     <button type="input" class="linkbutton">Send</button>

@@ -24,7 +24,7 @@ class Header extends React.Component {
             <div className="container grid">
                 <div className={styles.logo}>
                     <a href="/">
-                        <svg id="logo" viewBox="0 0 130 130">
+                        <svg id="logo" alt="fuzzylogic.ltd Home" viewBox="0 0 130 130">
                             <path d="m130.99 0v39.423h-26.282v-14.199h-13.141s-13.141 1.1981-13.141 14.199v13.001h13.141v26.142h-13.141v26.282s-2.7856 26.142-28.788 26.142h-49.639v-39.283h26.282v14.199h12.722s13.281-1.0583 13.281-14.199v-13.141h-13.281v-26.142h13.281v-26.142s2.6458-26.282 41.929-26.282z"/>
                             <path d="m91.563 104.85v26.142h39.423v-52.424h-26.282v26.282z"/>
                             <path d="m39.423 26.143v-26.142h-39.423v52.424h26.282v-26.282z"/>
