@@ -14,7 +14,7 @@ const Contact = () => {
                     <input type="text" name="name" id="name" />
                 </div>
                 <div className={styles.halfform}>
-                    <label htmlFor="name">Email</label>
+                    <label htmlFor="email">Email</label>
                     <input type="email" name="email" id="email" />
                 </div>
                 <div>
