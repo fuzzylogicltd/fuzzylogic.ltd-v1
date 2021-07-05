@@ -67,6 +67,7 @@ module.exports = {
         path: `${__dirname}/src/data`,
       },
     },
-    `gatsby-plugin-offline`
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-netlify-cms`
   ],
 }
