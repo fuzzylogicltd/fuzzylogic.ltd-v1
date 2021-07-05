@@ -16,28 +16,18 @@ module.exports = {
         background_color: `#023047`,
         theme_color: `#ff934f`,
         display: `standalone`,
-        icon: `src/images/favicon-32x32.png`, // This path is relative to the root of the site.
-        icons: [ // manually, so they go to static folder:
+        icon: `static/icons/icon.svg`, 
+        icons: [ 
           {
-            src: `/static/icons/mstile-70x70.png`,
-            sizes: `70x70`,
-            type: `image/png`,
-          },
-          {
-            src: `/static/icons/mstile-144x144.png`,
-            sizes: `144x144`,
-            type: `image/png`,
-          },
-          {
-            src: `/static/icons/android-chrome-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/static/icons/mstile-310x310.png`,
-            sizes: `310x310`,
-            type: `image/png`,
-          }
+            "src": "/icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
         ]
       }
     },
