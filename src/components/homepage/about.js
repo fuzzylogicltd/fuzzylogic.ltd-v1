@@ -20,7 +20,6 @@ class about extends Component {
             
             setTimeout(() => {
                 this.setState({ show: true });
-                console.log("visible");
               }, 200);
         } 
       }
