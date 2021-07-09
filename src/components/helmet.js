@@ -21,7 +21,6 @@ const helmet = props => {
           <meta charSet="utf-8" />
           <title>{props.title}</title>
           <link rel="canonical" href={`${data.site.siteMetadata.rootURL}/${props.slug}`} />
-
           <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
           <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
           <meta name="theme-color" content="#ffffff" />
