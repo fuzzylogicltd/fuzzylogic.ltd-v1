@@ -43,6 +43,7 @@
     height: 100%;
     backface-visibility: hidden;
     border-radius: 2px;
+    z-index:5;
 }
 
 .flipcardback {
