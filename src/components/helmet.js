@@ -10,7 +10,6 @@ const helmet = props => {
           site {
             siteMetadata {
               rootURL
-              title
               description
             }
           }
@@ -24,7 +23,7 @@ const helmet = props => {
           <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
           <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
           <meta name="theme-color" content="#ffffff" />
-          <meta name="description" content={props.description} />
+          <meta name="description" content={data.site.siteMetadata.description} />
         </Helmet>
       )}
     />
