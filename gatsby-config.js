@@ -31,7 +31,6 @@ module.exports = {
         ]
       }
     },
-    //`gatsby-transformer-remark`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -57,6 +56,15 @@ module.exports = {
         path: `${__dirname}/src/data`,
       },
     },
-    `gatsby-plugin-offline`
+    `gatsby-plugin-offline`,
+    {
+      resolve: 'gatsby-plugin-matomo',
+      options: {
+        siteId: '1',
+        matomoUrl: 'https://stats.fuzzylogic.ltd',
+        siteUrl: 'https://fuzzylogic.ltd',
+        cookieDomain: '*.fuzzylogic.ltd'
+      }
+    }
   ],
 }
