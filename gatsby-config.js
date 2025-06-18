@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "fuzzylogic.ltd",
     rootURL: "https://fuzzylogic.ltd",
-    copyright: "©2024 Lazar Miseljic. Built with Gatsby.",
+    copyright: "©2025 Lazar Miseljic. Built with Gatsby.",
     description:
       "Freelance web designer and developer. Creating modern websites for everyone.",
   },
