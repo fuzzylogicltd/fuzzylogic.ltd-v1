@@ -3,6 +3,7 @@ title: "Design"
 image: "./skills-design.svg"
 sortOrder: 1
 ---
+
 I value clarity, simplicity  
 and strong typography  
 with just a little oomph.
@@ -16,5 +17,4 @@ UX, UI, Web, Print, Logos
 Photoshop  
 Figma  
 Inkscape  
-InDesign  
-Balsamiq
+InDesign
